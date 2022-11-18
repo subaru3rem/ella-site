@@ -2,24 +2,37 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title> Meu site lindo como minha mbuttonher ou feio como eu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site para a melhor pessoa do mundo">
+    <meta name="image" content="image.jpg">
+    <title> Meu site lindo como minha mulher ou feio como eu</title>
     <link rel="stylesheet" href="styles.css">
     
 </head>
 <body>
-  <header>
-     <form action="#beijo"><button class="menu">beijo</button></form>
-     <form action="#cabelo"><button class="menu">cabelo</button></form>
-     <form action="#delineado"><button class="menu">delineado</button></form>
-     <form action="#rosto"><button class="menu">rosto</button></form>
-     <form action="#musica"><button class="menu">musica</button></form>
-     <form action="#versos"><button class="menu">versos</button></form>
-     <form action="#beleza"><button class="menu">beleza</button></form>
+  <header id="normal">
+     <a href="#beijo">beijo</a>
+     <a href="#cabelo">cabelo</a>
+     <a href="#delineado">delineado</a>
+     <a href="#rosto">rosto</a>
+     <a href="#musica">musica</a>
+     <a href="#versos">versos</a>
+     <a href="#beleza">beleza</a>
   </header>
-   <div>
-  
-
-    <section class="fundo_destaque">
+  <div id="responsive_manager">
+  <header id="icons">
+    <nav>
+    <a href="#beijo" title="Beijo"><p>Beijo</p><img src="icons/beijo.png"></a>
+    <a href="#cabelo" title="Cabelo"><p>Cabelo</p><img src="icons/cabelo.png"></a>
+    <a href="#delineado" title="Delineado"><p>Delineado</p><img src="icons/olho.png"></a>
+    <a href="#rosto" title="Rosto"><p>Rosto</p><img src="icons/rosto.png"></a>
+    <a href="#musica" title="Musica"><p>Musica</p><img src="icons/fone.png"></a>
+    <a href="#versos" title="Eventos"><p>Eventos</p><img src="icons/verso.png"></a>
+    <a href="#beleza" title="Beleza"><p>Beleza</p><img src="icons/beleza.png"></a>
+    </nav>
+  </header>
+   <div id="separador">
+    <section class="destaque">
      <h1>Rafaella Campos de Araujo da Silva Netto<br> (Ella)</h1>
      <p id="paragrafoT">um site para mostrar algumas das infinitas coisas q eu amo em minha namorada</p>
     </section>
@@ -102,18 +115,26 @@
      </section>
    
     <section id="beleza">
-      <h3>Amo a beleza estonteante da minha mbuttonher</h3>
+      <h3>Amo a beleza estonteante da minha munher</h3>
       <p id="rodape">eu n vou falar muita coisa, apenas apreciem ela como eu aprecio </p><br>
-      <a title="instagram" href="https://www.instagram.com/eu_ellaa/" target="_blank"><img src='eu_ella perfil.jpg' width="602" height="602"> </a>
+      <a title="Instagram" href="https://www.instagram.com/eu_ellaa/" target="_blank"><img src='eu_ella perfil.jpg'> </a>
     </section>
-    </div>
-
+  </div>
+  </div>
   <footer>
    <p id="rodape">Esse site foi feito exclusivamente para a pessoa q eu amo(vulgo minha esposa)</p>
   </footer>
-
-
-
+  <script>
+    function Menu(){
+      menu = document.getElementById("responsive")
+      if (menu.style.display == "none"){
+        menu.style.display = "block"
+      }
+      else{
+        menu.style.display = "none"
+      }
+    }
+  </script>
 </body>
 
 </html>
