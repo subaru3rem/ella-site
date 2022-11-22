@@ -120,4 +120,7 @@ footer{
    h1{
       width: 90%;
    }
+   #icons a:hover img{
+      display: none;
+   }
 }
