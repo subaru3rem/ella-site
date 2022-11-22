@@ -10,7 +10,8 @@ body{
 }
 #separador{
    background-color:var(--CorSecundaria);
-   margin: 7%;
+   margin: 3% 7%;
+   width: 86%;
    padding: 0px 0px 1rem 0px;
 }
 h1{
@@ -125,5 +126,9 @@ footer{
    }
    #icons a:hover label{
       padding: 30% 0;
+   }
+   #separador{
+      width: 79%;
+      margin: 0 0 0 18%;
    }
 }
