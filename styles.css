@@ -87,15 +87,27 @@ footer{
       position: fixed;
       left: 0;
    }
-   #icons p{
+   #icons label{
       display: none;
    }
    #icons a{
       border-radius: 0 30% 30% 0;
       display:block;
+      transition:all .5s ease-out;
    }
-   #icons a:hover p{
-      display: contents;
+   #icons a:hover{
+    border-radius: 0 30% 30% 0;
+    display: flex;
+    align-items: center;
+    padding-right: 30%;
+    padding-left: 10px;
+    
+   }
+   #icons a:hover label{
+      display:block;
+   }
+   #icons #delineado_link:hover{
+      padding-right: 60%;
    }
 }
 @media only screen and (max-width: 600px){
